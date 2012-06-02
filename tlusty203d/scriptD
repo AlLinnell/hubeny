@@ -1,0 +1,8 @@
+#!/bin/sh
+#script to run t203n and copy output to desktop
+cp ~/Desktop/r0136.5 ./fort.5
+./t203n <fort.5 >fort.6
+cp fort.6 ~/Desktop/r0136nl.6
+cp fort.7 ~/Desktop/r0136nl.7
+
+

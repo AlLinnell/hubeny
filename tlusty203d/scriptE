@@ -1,0 +1,20 @@
+#!/bin/sh
+#script to run t203n and copy output to desktop
+cp ~/Desktop/t25g80nl.5 ./fort.5
+./t203n <fort.5 >fort.6
+cp fort.6 ~/Desktop/t25g80nl.6
+cp fort.7 ~/Desktop/t25g80nl.7
+cp fort.9 ~/Desktop/t25g80nl.9
+cp ~/Desktop/t25g80nlc.5 ./fort.5
+cp fort.7 fort.8
+./t203n<fort.5 >fort.6
+cp fort.6 ~/Desktop/t25g80nlc.6
+cp fort.7 ~/Desktop/t25g80nlc.7
+cp fort.9 ~/Desktop/t25g80nlc.9
+cp ~/Desktop/t25g80nll.5 ./fort.5
+cp fort.7 fort.8
+./t203n<fort.5 >fort.6
+cp fort.6 ~/Desktop/t25g80nll.6
+cp fort.7 ~/Desktop/t25g80nll.7
+cp fort.9 ~/Desktop/t25g80nll.9
+

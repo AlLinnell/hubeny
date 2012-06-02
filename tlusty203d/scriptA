@@ -1,0 +1,46 @@
+#!/bin/sh
+#script to run t203n and copy output to desktop
+cp ~/Desktop/r1000.5 ./r1000.5
+cp ~/Desktop/r1000nlc.5 ./r1000nlc.5
+cp ~/Desktop/r1000nl.5 ./r1000nl.5
+./t203n <r1000.5 >fort.6
+cp fort.6 ~/Desktop/r1000.6
+cp fort.7 ~/Desktop/r1000.7
+cp fort.7 fort.8
+./t203n <r1000nlc.5 >fort.6
+cp fort.6 ~/Desktop/r1000nlc.6
+cp fort.7 ~/Desktop/r1000nlc.7
+cp fort.7 fort.8
+./t203n <r1000nl.5 >fort.6
+cp fort.6 ~/Desktop/r1000nl.6
+cp fort.7 ~/Desktop/r1000nl.7
+#
+cp ~/Desktop/r1200.5 ./r1200.5
+cp ~/Desktop/r1200nlc.5 ./r1200nlc.5
+cp ~/Desktop/r1200nl.5 ./r1200nl.5
+./t203n <r1200.5 >fort.6
+cp fort.6 ~/Desktop/r1200.6
+cp fort.7 ~/Desktop/r1200.7
+cp fort.7 fort.8
+./t203n <r1200nlc.5 >fort.6
+cp fort.6 ~/Desktop/r1200nlc.6
+cp fort.7 ~/Desktop/r1200nlc.7
+cp fort.7 fort.8
+./t203n <r1200nl.5 >fort.6
+cp fort.6 ~/Desktop/r1200nl.6
+cp fort.7 ~/Desktop/r1200nl.7
+#
+cp ~/Desktop/r1400.5 ./r1400.5
+cp ~/Desktop/r1400nlc.5 ./r1400nlc.5
+cp ~/Desktop/r1400nl.5 ./r1400nl.5
+./t203n <r1400.5 >fort.6
+cp fort.6 ~/Desktop/r1400.6
+cp fort.7 ~/Desktop/r1400.7
+cp fort.7 fort.8
+./t203n <r1400nlc.5 >fort.6
+cp fort.6 ~/Desktop/r1400nlc.6
+cp fort.7 ~/Desktop/r1400nlc.7
+cp fort.7 fort.8
+./t203n <r1400nl.5 >fort.6
+cp fort.6 ~/Desktop/r1400nl.6
+cp fort.7 ~/Desktop/r1400nl.7

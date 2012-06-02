@@ -1,0 +1,26 @@
+#!/bin/sh
+#script to run t203n and copy output to desktop
+#the script copies a desktop file to ./fort.5
+#the script then runs t203n and copies the .6,.7, and .9 files to the desktop
+#the script then copies a nlc.5 file to ./fort.5, runs t203n, and copies
+#output to the desktop.
+#finally, the script copies a nll.5 file to ./fort.5, runs t203n, and copies
+#output to the desktop
+cp ~/Desktop/r3000.5 ./fort.5
+./t203n <fort.5 >fort.6
+cp fort.6 ~/Desktop/r3000nl.6
+cp fort.7 ~/Desktop/r3000nl.7
+cp fort.9 ~/Desktop/r3000nl.9
+cp ~/Desktop/r3000nlc.5 ./fort.5
+cp fort.7 fort.8
+./t203n<fort.5 >fort.6
+cp fort.6 ~/Desktop/r3000nlc.6
+cp fort.7 ~/Desktop/r3000nlc.7
+cp fort.9 ~/Desktop/r3000nlc.9
+cp ~/Desktop/r3000nll.5 ./fort.5
+cp fort.7 fort.8
+./t203n<fort.5 >fort.6
+cp fort.6 ~/Desktop/r3000nll.6
+cp fort.7 ~/Desktop/r3000nll.7
+cp fort.9 ~/Desktop/r3000nll.9
+
