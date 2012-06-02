@@ -1,0 +1,68 @@
+ 10000. 4.0        ! TEFF, GRAV
+ F  F              ! LTE,  LTGRAY
+ 'enlb'              ! name of file containing non-standard flags
+*
+* frequencies
+*
+ 100
+*
+* data for atoms   
+*
+ 28                 ! NATOMS
+* mode abn modpf
+   2   0   0       ! H
+    1   0   0       ! He
+    0   0   0       ! Li
+    0   0   0       ! Be
+    0   0   0       ! B
+   2   0   0       ! C
+   1   0   0       ! N
+    1   0   0       ! O
+    1   0   0       ! F
+    1   0   0       ! Ne
+    1   0   0       ! Na
+   1   0   0       ! Mg
+    1   0   0       ! Al
+   1   0   0       ! Si
+    1   0   0       ! P
+    1   0   0       ! S
+    1   0   0       ! Cl
+    1   0   0       ! Ar
+    1   0   0       ! K
+    1   0   0       ! Ca
+    1   0   0       ! Sc
+    1   0   0       ! Ti
+    1   0   0       ! V
+    1   0   0       ! Cr
+    1   0   0       ! Mn
+   2   0   0       ! Fe
+    1   0   0       ! Co
+    1   0   0       ! Ni
+*
+* data for ions
+*
+*iat   iz   nlevs  ilast ilvlin  nonstd typion  filei
+*
+   1    0     9      0      0      0    ' H 1' 'h1s.dat'
+   1    1     1      1      0      0    ' H 2' ' '
+   6    0    26      0      0      0    ' C 1' 'tlusty_c1.dat'
+   6    1    14      0      0      0    ' C 2' 'tlusty_c2.dat'
+   6    2     1      1      0      0    ' C 3' ' '
+  26    0    38      0      0     -1    'Fe 1' '/disk11/hubeny/atdat/fe1.dat'
+   0    0                                      '/disk11/hubeny/fe1odf/fort.31' 
+                                               '/disk11/hubeny/fe1odf/fort.32'
+                                               '/disk11/hubeny/fe1odf/fort.60'
+  26    1    35      0      0     -1    'Fe 2' '/disk11/hubeny/atdat/fe2.dat'
+   0    0                                      '/disk11/hubeny/fe2odf/fort.31'
+                                               '/disk11/hubeny/fe2odf/fort.32'
+                                               '/disk11/hubeny/fe2odf/fort.61'
+  26    2    50      0      0     -1    'Fe 3' '/disk11/hubeny/atdat/fe3c.dat'
+   0    0                                      '/disk11/hubeny/fe3odf/fort.31' 
+                                               '/disk11/hubeny/fe3odf/fort.32'
+                                               '/disk11/hubeny/fe3odf/fort.62'
+  26    3     1      1      0      0    'Fe 4' ' '
+   0    0     0     -1      0      0    '    ' ' '
+*
+* end
+     
+

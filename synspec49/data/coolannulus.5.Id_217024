@@ -1,0 +1,81 @@
+* INPUT FILE FOR  LTE H-He models - moderately involved
+* This type of data may be used for temperatures 12000 < Teff <25,000 K
+* 
+* This file is analogous to the TLUSTY benchmark file m25lt.5
+*
+*******************************************************************
+* first block
+*******************************************************************
+ 0  0                        ! INPUT, IFZ0
+ 0.69 3.E-11 0.01226 1.3611 5000 0 0.67 -1 0.01 ! MSTAR,MDOT,RSTAR,RELDST,REYNUM,
+*                                       ZETA0,ZETA1,FRACTV,DMVISC
+ T T                         ! LTE,LTGRAY
+ 'c:\hubeny\EQCOOL.dat'
+* 'c:\hubeny\nilta.dat'
+********************************************************************
+* frequencies
+ 80                         !NFREAD
+********************************************************************
+* data for atoms
+*
+ 30                          !NATOMS
+* mode abn modpf
+    2   0   0		! hydrogen
+    2   0   0		! helium
+	1   0   0       ! lithium
+	1   0   0       ! beryllium
+	1   0   0       ! boron
+	2   0   0       ! carbon
+	2   0   0       ! nitrogen
+	2   0   0       ! oxygen
+	1   0   0       ! fluorine
+	1   0   0       ! neon
+	1   0   0       ! sodium
+	2   0   0       ! magnesium
+	2   0   0       ! aluminum
+	2   0   0       ! silicon
+	1   0   0       ! phosphorus
+	1   0   0       ! sulphur
+	1   0   0       ! chlorine
+	1   0   0       ! argon
+	1   0   0       ! potassium
+	1   0   0       ! calcium
+	1   0   0       ! scandium
+	1   0   0       ! titanium
+	1   0   0       ! vanadium
+	1   0   0       ! chromium
+	1   0   0       ! manganese
+	2   0   0       ! iron
+	1   0   0       ! cobalt
+	1   0   0       ! nickel
+	1   0   0       ! copper
+	1   0   0       ! zinc 
+
+*********************************************************************
+* data for ions
+*
+*iat   iz  nlevs  ilast ilvlin  nonstd typion  filei
+*
+   1    -1     1      0    100      1    ' H 1' 'c:\hubeny\atdat\Hmin.dat'
+   0     0     3      0
+   1     0     9      0    100      0    ' H 1' 'c:\hubeny\h1.dat'
+   1     1     1      1      0      0    ' H 2' ' '
+   2     0    14      0    100      0    'He 1' 'c:\hubeny\he1.dat'
+   2     1    14      0    100      0    'He 2' 'c:\hubeny\he2.dat'
+   2     2     1      1      0      0    'He 3' ' '
+   6     0    26      0    100      0    ' C 1' 'c:\hubeny\atdat\tlusty_c1.dat'
+   6     1     1      1      0		0    ' C 2' ' '
+   7     0    21      0    100      0    ' N 1' 'c:\hubeny\bl\n1.dat'
+   7     1     1      1      0      0    ' N 2'	' '
+   8     0    12      0    100      0    ' O 1' 'c:\hubeny\bl\o1.dat'
+   8     1     1      1      0      0    ' O 2' ' '
+   12    0    13      0    100      0    'Mg 1' 'c:\hubeny\atdat\mg1.dat'
+   12    1     1      1      0      0    'Mg 2' ' '
+   13    0    10      0    100      0    'Al 1' 'c:\hubeny\atdat\tlusty_al1.dat'
+   13    1     1      1      0      0    'Al 2' ' '
+   14    0    16      0    100      0    'Si 1' 'c:\hubeny\atdat\tlusty_si1.dat'
+   14    1     1      1      0      0    'Si 1' ' '
+   26    0    30      0    100      0    'Fe 1' 'c:\hubeny\atdat\fe1c.dat'
+   26    1     1      1      0      0    'Fe 2' ' '
+   0     0     0     -1      0      0    '    ' ' '
+* end
